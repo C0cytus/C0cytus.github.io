@@ -9,7 +9,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #222;
-  background: rgba(81,60,32,0.5);
+  background: rgba(193,178,163,0.382);
 }
 #page {
   position: relative;
@@ -110,7 +110,7 @@ h2.title a {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.382);
   z-index: 1;
 }
 #lx-aside {
