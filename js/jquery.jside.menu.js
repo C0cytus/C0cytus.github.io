@@ -1,9 +1,4 @@
-
 (function($){     
-  var pjax = new Pjax({
-  elements: "a", // default is "a[href], form[action]"
-  selectors: ["title"]
-      })
     $.fn.jSideMenu = function(options){
     var setting = $.extend({
         jSidePosition: "position-right", //possible options position-left or position-right 
