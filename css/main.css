@@ -9,7 +9,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #222;
-  background: #f8f8f8;
+  background: rgba(81,60,32,0.5);
 }
 #page {
   position: relative;
