@@ -1,4 +1,4 @@
-  var pjax = new Pjax({
+ var pjax = new Pjax({
   elements: "a", // default is "a[href], form[action]"
-  selectors: ["title"，"#page"]
+  selectors: ["title","#page"]
       })

@@ -1,5 +1,4 @@
 /* global CONFIG */
-
 $(document).on("DOMContentLoaded", function() {
   // Popup Window
   var isfetched = false;
