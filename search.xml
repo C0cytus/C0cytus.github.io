@@ -19,7 +19,44 @@
   <entry>
     <title>Regular Expression</title>
     <url>/2020/04/03/Regular-Expression/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="正则表达式基本语法"><a href="#正则表达式基本语法" class="headerlink" title="正则表达式基本语法"></a>正则表达式基本语法</h2><a id="more"></a>
+<h2 id="非打印字符"><a href="#非打印字符" class="headerlink" title="非打印字符"></a>非打印字符</h2><pre><code class="bash">\cx        匹配由x指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一
+           否则，将 c 视为一个原义的 <span class="string">'c'</span> 字符
+\f         匹配一个换页符。等价于 \x0c 和 \cL
+\n         匹配一个换行符。等价于 \x0a 和 \cJ
+\r         匹配一个回车符。等价于 \x0d 和 \cM
+\s         匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [\f\n\r\t\v]
+           注意 Unicode 正则表达式会匹配全角空格符。
+\S         匹配任何非空白字符。等价于 \[^ \f\n\r\t\v]
+\t         匹配一个制表符。等价于 \x09 和 \cI
+\v         匹配一个垂直制表符。等价于 \x0b 和 \cK</code></pre>
+<h2 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h2><pre><code class="bash">$           匹配输入字符串的结尾位置。如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 <span class="string">'\n'</span> 或 <span class="string">'\r'</span>
+()          标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用
+*           匹配前面的子表达式零次或多次
++           匹配前面的子表达式一次或多次
+.           匹配除换行符 \n 之外的任何单字符 
+[           标记一个中括号表达式的开始
+?           匹配前面的子表达式零次或一次，或指明一个非贪婪限定符
+\           将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符
+^           匹配输入字符串的开始位置，除非在方括号表达式中使用
+            当该符号在方括号表达式中使用时，表示不接受该方括号表达式中的字符集合
+{           标记限定符表达式的开始
+|           指明两项之间的一个选择</code></pre>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="定位符"><a href="#定位符" class="headerlink" title="定位符"></a>定位符</h3><pre><code class="bash">\b           匹配一个单词边界，即字与空格间的位置
+\B           非单词边界匹配</code></pre>
+<h3 id="捕获元"><a href="#捕获元" class="headerlink" title="捕获元"></a>捕获元</h3><pre><code class="bash">//前瞻：
+exp1(?=exp2) 查找exp2前面的exp1
+//后顾：
+(?&lt;=exp2)exp1 查找exp2后面的exp1
+//负前瞻：
+exp1(?!exp2) 查找后面不是exp2的exp1
+//负后顾：
+(?&lt;!exp2)exp1 查找前面不是exp2的exp1
+</code></pre>
+<h4 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h4><pre><code class="bash">// 数字格式化 1,123,000
+<span class="string">"1234567890"</span>.replace(/\B(?=(?:\d{3})+(?!\d))/g,<span class="string">","</span>) 
+// 结果：1,234,567,890，匹配的是后面是3*n个数字的非单词边界(\B)</code></pre>
+]]></content>
       <categories>
         <category>Tools</category>
       </categories>
