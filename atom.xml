@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hrh&#39;s Blogs</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://c0cytus.github.io/"/>
+  <updated>2020-10-20T12:58:42.300Z</updated>
+  <id>https://c0cytus.github.io/</id>
+  
+  <author>
+    <name>Hrh</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Deadline</title>
+    <link href="https://c0cytus.github.io/2046/12/26/Deadline/"/>
+    <id>https://c0cytus.github.io/2046/12/26/Deadline/</id>
+    <published>2046-12-26T06:55:54.000Z</published>
+    <updated>2020-10-20T12:58:42.300Z</updated>
+    
+    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">Curiosity Killed The Cat</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="128f5a9d77abf62990b5b24714cf16e90b7fe60fc8b3822a5a52e7b9e3991058">57ebaefa09dde84faf40620452d93209aed3312972e029794f9c1645e2e66d367bb5668ce928a51c0ad16fb7d2af3428af801af5e500987773708c654622a0de0eebaf971169fdb1bdbe0725b664eb100d6ec69271d4b14726f2fd002401a2decd6eaa1d28abeefdd3c9335a523eab8646967cf8a7a6b659e03416f485b343d6a6d5aa41fd478242b857ab9d0acc6d5bdb47d92402f0044574215f0681067c8e59a7a806993aa2f5533d8d9decc3eb95c79b1aace2965063ebd77c3178685a4bb51fb1c6e140f7cb94b5338780eccb7cdbd7522eaa09a36028447baa48e7f873fd12b887d89843edb549755922c6153d28c7c3457f6992fc33fc41d4b811df92910531c4437d5fd6ea5f0197b0e7adcf8b57f7ae47ee6e77ef98d9a185e6e300d6d89095a88764299f04ab448179b33f469d7c64639e827507876df54ea8fb104f821f01b7a2fcc305828fda7e6e63a6f9536b4cd5e03a714f4ad40f2e615cdb1eb7bf56d7748b508624e7ff37e706d2ba4e5b5603c3497f710a2d8aa04a98361304f8c94225557053baed8e903eaea55f8928b5f22ad02c521c40190f629ae3f87fadd435b27a7db945322b2b2dc109416923d096d2a076b3a7ce16b78abe63f1635352a66527997370756b444dd70a9262a9f1ae4d989a4c84d59ffbd94b243f74da7fcd374e617d4d3dcdf91a3c2f86430f95823602b12229357b308c922b35bbcf4c10425f63dc1ae3066b918ec0d04969b79adf72cbef33712754f0647c6de06c0a309a5a7b20e9ee2c0294d22027918c97e17167090e74d067e5180354cabd981e9f9ff2dfbeebcf1460a6c2854cca674acd7b1ea63dad32f49bf06d4fe015edc6c7feeed3871d4f8ad6e78b60c0dd95c3bce8a4690e049dbeb7368d2d5bb5ea17629b9e657b0abc7c157daedc6569b4eff92ce7756109adec7a93c4c4b0c60ca092f969b48e728f2cdbdbeb9d0e2658f2833bde3aba4656c423b44fb51ae6e43455d11aa83bfba7e003ff250eeff720f81e7ac2e4aa154a40f8c17935fa43a6606c5b0911c807c14bb884705906d73fcd87ccc049572d0cfd1c65c5def3b4a2d82f2c952a49172137129bfaeff825d5736bf8a48c0bc3a2eacad72bc90f8a0e25ba00786c6e16c0c51c572420b82b9066999982855b190b98cf2ad2308884bb2c021f040309fc5302c4db10aeb1a921531f5d732c0981a3a4559b0ffbd2511baa3f6b6a7cdbc56330c5dbe792008935b9b5bd44d10e429be2b517bb03d1b8613b92f4c16e35bba80c0fa228e4dc30106fdd4ab3ffb211d17651e19c4524bce459098dfe2045634099bdfe5b74272cdb48f00fac524e193ff245dcdf668d92101a8c335c04f28336301e658548f2e5e4478bca159a9d31983e83de595c605d15a5e696388deefcabd3b08fd654380d3f20f5471f9371b6c89e9954d179bb9a076449eb70f66f5af82faccb91bb2d4ede40ddb44546e47037dfc24e19790f6125214a5773c13d700fa95d4307b40d935f7975f5bdadd65234a96dbdecc51086ee12ca1a23cfbc38724f2c8fd86bfaf74f31482f20f0fb7ea86fbadc057f0e2a452806ec58e8d26025749fccb6982054422042f78375e0657c3e413f29d45223ef4c4acc2a9c004076bcc5504fe790e42a683b55e42fc2ab2ada5c7dfe80422af3fedb168d7fc4043cc0b60d4eaa28f88f639e9b1105e1476cb0bc19cf68c33194cc4067b44df3288534ea2785d615390500d85c68d8f8247b5002a988667289c57394dff93d1bf997bae55c531594c80eaa1d44da9b68e70291765b625ac7cfa1bd073e5333e03b07cbacc4b27b1759d96c0b234ad1a0b6099a616def13614d7067f194bb7c6dcf60dc1c8a9e7061673cf2033ce53bb79e3a903b219d1324e123a54269e0254b15c76d6553a2785508c7c9fd05f189bafcb9f70927a81c12fffa303e9a8ae16fae6806aaa50c6ef546404aaf617c3ee719f3bb124b2b60</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    
+    <summary type="html">
+    
+      Private, Don&#39;t Click!
+    
+    </summary>
+    
+      <category term="Schedual" scheme="https://c0cytus.github.io/categories/Schedual/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Regular Expression</title>
+    <link href="https://c0cytus.github.io/2020/04/03/Regular-Expression/"/>
+    <id>https://c0cytus.github.io/2020/04/03/Regular-Expression/</id>
+    <published>2020-04-03T07:09:57.000Z</published>
+    <updated>2020-04-03T14:17:27.755Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="正则表达式基本语法"><a href="#正则表达式基本语法" class="headerlink" title="正则表达式基本语法"></a>正则表达式基本语法</h2><a id="more"></a><h2 id="非打印字符"><a href="#非打印字符" class="headerlink" title="非打印字符"></a>非打印字符</h2><pre><code class="bash">\cx        匹配由x指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一           否则，将 c 视为一个原义的 <span class="string">'c'</span> 字符\f         匹配一个换页符。等价于 \x0c 和 \cL\n         匹配一个换行符。等价于 \x0a 和 \cJ\r         匹配一个回车符。等价于 \x0d 和 \cM\s         匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [\f\n\r\t\v]           注意 Unicode 正则表达式会匹配全角空格符。\S         匹配任何非空白字符。等价于 \[^ \f\n\r\t\v]\t         匹配一个制表符。等价于 \x09 和 \cI\v         匹配一个垂直制表符。等价于 \x0b 和 \cK</code></pre><h2 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h2><pre><code class="bash">$           匹配输入字符串的结尾位置。如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 <span class="string">'\n'</span> 或 <span class="string">'\r'</span>()          标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用*           匹配前面的子表达式零次或多次+           匹配前面的子表达式一次或多次.           匹配除换行符 \n 之外的任何单字符 [           标记一个中括号表达式的开始?           匹配前面的子表达式零次或一次，或指明一个非贪婪限定符\           将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符^           匹配输入字符串的开始位置，除非在方括号表达式中使用            当该符号在方括号表达式中使用时，表示不接受该方括号表达式中的字符集合{           标记限定符表达式的开始|           指明两项之间的一个选择</code></pre><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="定位符"><a href="#定位符" class="headerlink" title="定位符"></a>定位符</h3><pre><code class="bash">\b           匹配一个单词边界，即字与空格间的位置\B           非单词边界匹配</code></pre><h3 id="捕获元"><a href="#捕获元" class="headerlink" title="捕获元"></a>捕获元</h3><pre><code class="bash">//前瞻：exp1(?=exp2) 查找exp2前面的exp1//后顾：(?&lt;=exp2)exp1 查找exp2后面的exp1//负前瞻：exp1(?!exp2) 查找后面不是exp2的exp1//负后顾：(?&lt;!exp2)exp1 查找前面不是exp2的exp1</code></pre><h4 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h4><pre><code class="bash">// 数字格式化 1,123,000<span class="string">"1234567890"</span>.replace(/\B(?=(?:\d{3})+(?!\d))/g,<span class="string">","</span>) // 结果：1,234,567,890，匹配的是后面是3*n个数字的非单词边界(\B)</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;正则表达式基本语法&quot;&gt;&lt;a href=&quot;#正则表达式基本语法&quot; class=&quot;headerlink&quot; title=&quot;正则表达式基本语法&quot;&gt;&lt;/a&gt;正则表达式基本语法&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="Tools" scheme="https://c0cytus.github.io/categories/Tools/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://c0cytus.github.io/2020/03/27/hello-world/"/>
+    <id>https://c0cytus.github.io/2020/03/27/hello-world/</id>
+    <published>2020-03-27T12:56:17.920Z</published>
+    <updated>2020-04-03T08:10:38.174Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
