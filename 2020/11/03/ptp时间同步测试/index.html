@@ -21,15 +21,19 @@
     var CONFIG = {"hostname":"c0cytus.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hrh&#39;s Blogs">
-<meta property="og:url" content="https://c0cytus.github.io/categories/Schedual/index.html">
+  <meta name="description" content="利用ptp4l测试时间同步性">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ptp时间同步测试">
+<meta property="og:url" content="https://c0cytus.github.io/2020/11/03/ptp%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%95/index.html">
 <meta property="og:site_name" content="Hrh&#39;s Blogs">
+<meta property="og:description" content="利用ptp4l测试时间同步性">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-03T02:45:44.000Z">
+<meta property="article:modified_time" content="2020-11-03T02:58:03.250Z">
 <meta property="article:author" content="Hrh">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://c0cytus.github.io/categories/Schedual/">
+<link rel="canonical" href="https://c0cytus.github.io/2020/11/03/ptp%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%95/">
 
 
 <script id="page-configurations">
@@ -37,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Category: Schedual | Hrh's Blogs</title>
+  <title>ptp时间同步测试 | Hrh's Blogs</title>
   
 
 
@@ -140,51 +144,96 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">Schedual
-          <small>Category</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://c0cytus.github.io/2020/11/03/ptp%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Hrh">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hrh's Blogs">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ptp时间同步测试
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-11-03 10:45:44 / Modified: 10:58:03" itemprop="dateCreated datePublished" datetime="2020-11-03T10:45:44+08:00">2020-11-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/TSN/" itemprop="url" rel="index"><span itemprop="name">TSN</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2046</span>
+        <p>利用ptp4l测试时间同步性</p>
+<a id="more"></a>
+<p>上文提到，因为硬件时间戳的问题，我们编译的程序并不能运行，但示例程序中时间同步的解决其实借助了另一个开源工具ptp4l，这个工具是支持软件时间戳的，在树莓派上，eth0是可以提供软件时间戳的，所以我们可以在两个树莓派上测试一下</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo git <span class="built_in">clone</span> git://git.code.sf.net/p/linuxptp/code linuxptp</span><br><span class="line"><span class="built_in">cd</span> linuxptp</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo ptp4l -i eth0 -m -S     //主时钟</span><br><span class="line">sudo ptp4l -i eth0 -m -S -s  //从时钟，在启用从时钟的树莓派上最好先关闭网络时间同步</span><br></pre></td></tr></table></figure>
+
+<h2 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h2><p>根据TSN参考程序的说法，offset将会在50秒以内降至50纳秒以内，但是根据寝室网络环境的实验结果，第一次运行时，offset将需要花费几分钟才能降至几百到几千的范围，而且随着运行时间的延长，offset波动可能会突然变大，而delay则基本维持在38000左右，推测是软件时间戳所导致的</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2046-12-26T14:55:54+08:00"
-              content="2046-12-26">
-          12-26
-        </time>
-      </div>
+      <footer class="post-footer">
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2046/12/26/Deadline/" itemprop="url">
-            <span itemprop="name">Deadline</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/11/03/%E7%BC%96%E8%AF%91TSN%E5%8F%82%E8%80%83%E7%A8%8B%E5%BA%8F/" rel="prev" title="构建TSN参考程序">
+      <i class="fa fa-chevron-left"></i> 构建TSN参考程序
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2046/12/26/Deadline/" rel="next" title="Deadline">
+      Deadline <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
@@ -237,6 +286,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动"><span class="nav-number">2.</span> <span class="nav-text">启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试结果"><span class="nav-number">3.</span> <span class="nav-text">测试结果</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

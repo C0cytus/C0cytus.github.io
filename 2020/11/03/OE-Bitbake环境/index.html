@@ -21,19 +21,19 @@
     var CONFIG = {"hostname":"c0cytus.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="正则表达式基本语法">
+  <meta name="description" content="OE-Bitbake的介绍&amp;&amp;更新libbpf">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Regular Expression">
-<meta property="og:url" content="https://c0cytus.github.io/2020/04/03/Regular-Expression/index.html">
+<meta property="og:title" content="OE-Bitbake环境">
+<meta property="og:url" content="https://c0cytus.github.io/2020/11/03/OE-Bitbake%E7%8E%AF%E5%A2%83/index.html">
 <meta property="og:site_name" content="Hrh&#39;s Blogs">
-<meta property="og:description" content="正则表达式基本语法">
+<meta property="og:description" content="OE-Bitbake的介绍&amp;&amp;更新libbpf">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-03T07:09:57.000Z">
-<meta property="article:modified_time" content="2020-10-30T02:00:38.417Z">
+<meta property="article:published_time" content="2020-11-03T01:54:16.000Z">
+<meta property="article:modified_time" content="2020-11-03T02:39:35.162Z">
 <meta property="article:author" content="Hrh">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://c0cytus.github.io/2020/04/03/Regular-Expression/">
+<link rel="canonical" href="https://c0cytus.github.io/2020/11/03/OE-Bitbake%E7%8E%AF%E5%A2%83/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>Regular Expression | Hrh's Blogs</title>
+  <title>OE-Bitbake环境 | Hrh's Blogs</title>
   
 
 
@@ -151,7 +151,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://c0cytus.github.io/2020/04/03/Regular-Expression/">
+    <link itemprop="mainEntityOfPage" href="https://c0cytus.github.io/2020/11/03/OE-Bitbake%E7%8E%AF%E5%A2%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -164,7 +164,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Regular Expression
+          OE-Bitbake环境
         </h1>
 
         <div class="post-meta">
@@ -173,23 +173,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-04-03 15:09:57" itemprop="dateCreated datePublished" datetime="2020-04-03T15:09:57+08:00">2020-04-03</time>
+              <time title="Created: 2020-11-03 09:54:16 / Modified: 10:39:35" itemprop="dateCreated datePublished" datetime="2020-11-03T09:54:16+08:00">2020-11-03</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-10-30 10:00:38" itemprop="dateModified" datetime="2020-10-30T10:00:38+08:00">2020-10-30</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Tools/" itemprop="url" rel="index"><span itemprop="name">Tools</span></a>
+                  <a href="/categories/TSN/" itemprop="url" rel="index"><span itemprop="name">TSN</span></a>
                 </span>
             </span>
 
@@ -204,44 +198,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>正则表达式基本语法</p>
+        <p>OE-Bitbake的介绍&amp;&amp;更新libbpf</p>
 <a id="more"></a>
-<h2 id="非打印字符"><a href="#非打印字符" class="headerlink" title="非打印字符"></a>非打印字符</h2><pre><code class="bash">\cx        匹配由x指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一
-           否则，将 c 视为一个原义的 <span class="string">'c'</span> 字符
-\f         匹配一个换页符。等价于 \x0c 和 \cL
-\n         匹配一个换行符。等价于 \x0a 和 \cJ
-\r         匹配一个回车符。等价于 \x0d 和 \cM
-\s         匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [\f\n\r\t\v]
-           注意 Unicode 正则表达式会匹配全角空格符。
-\S         匹配任何非空白字符。等价于 \[^ \f\n\r\t\v]
-\t         匹配一个制表符。等价于 \x09 和 \cI
-\v         匹配一个垂直制表符。等价于 \x0b 和 \cK</code></pre>
-<h2 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h2><pre><code class="bash">$           匹配输入字符串的结尾位置。如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 <span class="string">'\n'</span> 或 <span class="string">'\r'</span>
-()          标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用
-*           匹配前面的子表达式零次或多次
-+           匹配前面的子表达式一次或多次
-.           匹配除换行符 \n 之外的任何单字符 
-[           标记一个中括号表达式的开始
-?           匹配前面的子表达式零次或一次，或指明一个非贪婪限定符
-\           将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符
-^           匹配输入字符串的开始位置，除非在方括号表达式中使用
-            当该符号在方括号表达式中使用时，表示不接受该方括号表达式中的字符集合
-{           标记限定符表达式的开始
-|           指明两项之间的一个选择</code></pre>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="定位符"><a href="#定位符" class="headerlink" title="定位符"></a>定位符</h3><pre><code class="bash">\b           匹配一个单词边界，即字与空格间的位置
-\B           非单词边界匹配</code></pre>
-<h3 id="捕获元"><a href="#捕获元" class="headerlink" title="捕获元"></a>捕获元</h3><pre><code class="bash">//前瞻：
-exp1(?=exp2) 查找exp2前面的exp1
-//后顾：
-(?&lt;=exp2)exp1 查找exp2后面的exp1
-//负前瞻：
-exp1(?!exp2) 查找后面不是exp2的exp1
-//负后顾：
-(?&lt;!exp2)exp1 查找前面不是exp2的exp1
-</code></pre>
-<h4 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h4><pre><code class="bash">// 数字格式化 1,123,000
-<span class="string">"1234567890"</span>.replace(/\B(?=(?:\d{3})+(?!\d))/g,<span class="string">","</span>) 
-// 结果：1,234,567,890，匹配的是后面是3*n个数字的非单词边界(\B)</code></pre>
+<h2 id="基础说明"><a href="#基础说明" class="headerlink" title="基础说明"></a>基础说明</h2><p>OE指的是<a href="https://www.openembedded.org/wiki/Main_Page" target="_blank" rel="noopener">openembedded</a>,这是一个由脚本和数据构成的自动构建系统，而bitbake则是更底层的一个构建工具<br>关于bitbake，更详细的说明可以参见<a href="https://www.jianshu.com/p/2b5df45e614f" target="_blank" rel="noopener">bitbake实用指南</a>,这里面介绍了bitbake单独使用的做法，但有了OE之后我们可以更简单一些</p>
+<h2 id="OE和Bitbake环境搭建"><a href="#OE和Bitbake环境搭建" class="headerlink" title="OE和Bitbake环境搭建"></a>OE和Bitbake环境搭建</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git://git.openembedded.org/openembedded-core oe-core</span><br><span class="line"><span class="built_in">cd</span> oe-core</span><br><span class="line">git <span class="built_in">clone</span> git://git.openembedded.org/bitbake bitbake</span><br></pre></td></tr></table></figure>
+
+<h3 id="检查版本"><a href="#检查版本" class="headerlink" title="检查版本"></a>检查版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git checkout zeus</span><br><span class="line"><span class="built_in">cd</span> bitbake</span><br><span class="line">git checkout 1.46</span><br><span class="line"><span class="built_in">cd</span> ..</span><br></pre></td></tr></table></figure>
+
+<h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ./oe-init-build-env [&lt;build directory&gt;]  //要在local.con文件中，在BBFILE中添加我们构建目标的路径</span><br><span class="line">bitbake &lt;target&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="替换libbpf"><a href="#替换libbpf" class="headerlink" title="替换libbpf"></a>替换libbpf</h3><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>如果使用原本的libbpf，编译的时候会报错，指出xdp数据结构缺少txttime</p>
+<h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><p>如果按照Intel官方文档的要求，我们应该做的是</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/intel/iotg-yocto-ese-main.git</span><br><span class="line"><span class="built_in">cd</span> /iotg-yocto-ese-main/recipes-connectivity/libbpf</span><br><span class="line">bitbake -b libbpf_git.bb</span><br></pre></td></tr></table></figure>
+<p>但是，不知道为什么，bitbake始终显示无法找到libelf，即便把libelf.pc加入到了PKG_CONFIG_PATH这个环境变量还是失败了，所以只能采取手动安装的方法，所需要做的事情非常简单<br>1.获取libbpf源码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/libbpf/libbpf.git</span><br><span class="line"><span class="built_in">cd</span> src</span><br><span class="line">make</span><br></pre></td></tr></table></figure>
+<p>2.用patch命令打上补丁，补丁就在iotg-yocto-ese-main/recipes-connectivity/libbpf/libbpf目录下，只要打上标号为0001的即可</p>
 
     </div>
 
@@ -257,12 +227,12 @@ exp1(?!exp2) 查找后面不是exp2的exp1
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/03/27/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
+    <a href="/2020/10/30/TSN%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D/" rel="prev" title="TSN实验环境介绍">
+      <i class="fa fa-chevron-left"></i> TSN实验环境介绍
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/10/30/%E6%A0%91%E8%8E%93%E6%B4%BE%C2%B7/" rel="next" title="树莓派初始化">
-      树莓派初始化 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/11/03/%E7%BC%96%E8%AF%91TSN%E5%8F%82%E8%80%83%E7%A8%8B%E5%BA%8F/" rel="next" title="构建TSN参考程序">
+      构建TSN参考程序 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -322,7 +292,7 @@ exp1(?!exp2) 查找后面不是exp2的exp1
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#非打印字符"><span class="nav-number">1.</span> <span class="nav-text">非打印字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊字符"><span class="nav-number">2.</span> <span class="nav-text">特殊字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">3.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定位符"><span class="nav-number">3.1.</span> <span class="nav-text">定位符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#捕获元"><span class="nav-number">3.2.</span> <span class="nav-text">捕获元</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#例如："><span class="nav-number">3.2.1.</span> <span class="nav-text">例如：</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础说明"><span class="nav-number">1.</span> <span class="nav-text">基础说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OE和Bitbake环境搭建"><span class="nav-number">2.</span> <span class="nav-text">OE和Bitbake环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#检查版本"><span class="nav-number">2.2.</span> <span class="nav-text">检查版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#环境搭建"><span class="nav-number">2.3.</span> <span class="nav-text">环境搭建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#替换libbpf"><span class="nav-number">2.4.</span> <span class="nav-text">替换libbpf</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原因"><span class="nav-number">3.</span> <span class="nav-text">原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-1"><span class="nav-number">4.</span> <span class="nav-text">安装</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
