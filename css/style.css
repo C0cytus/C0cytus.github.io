@@ -366,6 +366,15 @@ h2.article-head {
   height: 33.5px;
   margin-right: 10px;
 }
+.avatar {
+  background: url("https://avatars3.githubusercontent.com/u/62730430?v=3&s=460");
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  border-radius: 16px;
+  background-size: 32px;
+}
 .home-link {
   display: flex;
   align-items: center;
