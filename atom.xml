@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hrh</title>
+  
+  
+  <link href="https://c0cytus.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://c0cytus.github.io/"/>
+  <updated>2020-11-03T02:13:07.656Z</updated>
+  <id>https://c0cytus.github.io/</id>
+  
+  <author>
+    <name>Hrh</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://c0cytus.github.io/2022/04/04/hello-world/"/>
+    <id>https://c0cytus.github.io/2022/04/04/hello-world/</id>
+    <published>2022-04-04T03:32:40.886Z</published>
+    <updated>2020-11-03T02:13:07.656Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu配置</title>
+    <link href="https://c0cytus.github.io/2020/12/04/Ubuntu%E9%85%8D%E7%BD%AE/"/>
+    <id>https://c0cytus.github.io/2020/12/04/Ubuntu%E9%85%8D%E7%BD%AE/</id>
+    <published>2020-12-04T08:09:03.000Z</published>
+    <updated>2020-12-04T09:02:16.358Z</updated>
+    
+    <content type="html"><![CDATA[<p>主题设置</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install gnome-tweaks</span><br><span class="line">sudo apt install chrome-gnome-shell</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;主题设置&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ptp时间同步测试</title>
+    <link href="https://c0cytus.github.io/2020/11/03/Intel-tsn-raspberrypi/ptp%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%95/"/>
+    <id>https://c0cytus.github.io/2020/11/03/Intel-tsn-raspberrypi/ptp%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%95/</id>
+    <published>2020-11-03T02:45:44.000Z</published>
+    <updated>2020-11-03T02:58:03.250Z</updated>
+    
+    <content type="html"><![CDATA[<p>利用ptp4l测试时间同步性</p><span id="more"></span><p>上文提到，因为硬件时间戳的问题，我们编译的程序并不能运行，但示例程序中时间同步的解决其实借助了另一个开源工具ptp4l，这个工具是支持软件时间戳的，在树莓派上，eth0是可以提供软件时间戳的，所以我们可以在两个树莓派上测试一下</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo git <span class="built_in">clone</span> git://git.code.sf.net/p/linuxptp/code linuxptp</span><br><span class="line"><span class="built_in">cd</span> linuxptp</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure><h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo ptp4l -i eth0 -m -S     //主时钟</span><br><span class="line">sudo ptp4l -i eth0 -m -S -s  //从时钟，在启用从时钟的树莓派上最好先关闭网络时间同步</span><br></pre></td></tr></table></figure><h2 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h2><p>根据TSN参考程序的说法，offset将会在50秒以内降至50纳秒以内，但是根据寝室网络环境的实验结果，第一次运行时，offset将需要花费几分钟才能降至几百到几千的范围，而且随着运行时间的延长，offset波动可能会突然变大，而delay则基本维持在38000左右，推测是软件时间戳所导致的</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;利用ptp4l测试时间同步性&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="TSN" scheme="https://c0cytus.github.io/categories/TSN/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>构建TSN参考程序</title>
+    <link href="https://c0cytus.github.io/2020/11/03/Intel-tsn-raspberrypi/%E7%BC%96%E8%AF%91TSN%E5%8F%82%E8%80%83%E7%A8%8B%E5%BA%8F/"/>
+    <id>https://c0cytus.github.io/2020/11/03/Intel-tsn-raspberrypi/%E7%BC%96%E8%AF%91TSN%E5%8F%82%E8%80%83%E7%A8%8B%E5%BA%8F/</id>
+    <published>2020-11-03T02:41:22.000Z</published>
+    <updated>2020-11-03T02:45:02.153Z</updated>
+    
+    <content type="html"><![CDATA[<p>构建Intel的TSN参考程序</p><span id="more"></span><p>如果完成了上面的工作，编译只需要</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./build.sh</span><br></pre></td></tr></table></figure><p>最后GCC编译的时候可能会出现有三个变量重定义的问题，在前面加上extern即可<br>但是因为树莓派是不支持硬件时间戳的，所以编译出来的程序并不能如愿以偿地运行</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;构建Intel的TSN参考程序&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="TSN" scheme="https://c0cytus.github.io/categories/TSN/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>OE-Bitbake环境</title>
+    <link href="https://c0cytus.github.io/2020/11/03/Intel-tsn-raspberrypi/OE-Bitbake%E7%8E%AF%E5%A2%83/"/>
+    <id>https://c0cytus.github.io/2020/11/03/Intel-tsn-raspberrypi/OE-Bitbake%E7%8E%AF%E5%A2%83/</id>
+    <published>2020-11-03T01:54:16.000Z</published>
+    <updated>2020-11-03T02:39:35.162Z</updated>
+    
+    <content type="html"><![CDATA[<p>OE-Bitbake的介绍&amp;&amp;更新libbpf</p><span id="more"></span><h2 id="基础说明"><a href="#基础说明" class="headerlink" title="基础说明"></a>基础说明</h2><p>OE指的是<a href="https://www.openembedded.org/wiki/Main_Page">openembedded</a>,这是一个由脚本和数据构成的自动构建系统，而bitbake则是更底层的一个构建工具<br>关于bitbake，更详细的说明可以参见<a href="https://www.jianshu.com/p/2b5df45e614f">bitbake实用指南</a>,这里面介绍了bitbake单独使用的做法，但有了OE之后我们可以更简单一些</p><h2 id="OE和Bitbake环境搭建"><a href="#OE和Bitbake环境搭建" class="headerlink" title="OE和Bitbake环境搭建"></a>OE和Bitbake环境搭建</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git://git.openembedded.org/openembedded-core oe-core</span><br><span class="line"><span class="built_in">cd</span> oe-core</span><br><span class="line">git <span class="built_in">clone</span> git://git.openembedded.org/bitbake bitbake</span><br></pre></td></tr></table></figure><h3 id="检查版本"><a href="#检查版本" class="headerlink" title="检查版本"></a>检查版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git checkout zeus</span><br><span class="line"><span class="built_in">cd</span> bitbake</span><br><span class="line">git checkout 1.46</span><br><span class="line"><span class="built_in">cd</span> ..</span><br></pre></td></tr></table></figure><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ./oe-init-build-env [&lt;build directory&gt;]  //要在local.con文件中，在BBFILE中添加我们构建目标的路径</span><br><span class="line">bitbake &lt;target&gt;</span><br></pre></td></tr></table></figure><h3 id="替换libbpf"><a href="#替换libbpf" class="headerlink" title="替换libbpf"></a>替换libbpf</h3><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>如果使用原本的libbpf，编译的时候会报错，指出xdp数据结构缺少txttime</p><h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><p>如果按照Intel官方文档的要求，我们应该做的是</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/intel/iotg-yocto-ese-main.git</span><br><span class="line"><span class="built_in">cd</span> /iotg-yocto-ese-main/recipes-connectivity/libbpf</span><br><span class="line">bitbake -b libbpf_git.bb</span><br></pre></td></tr></table></figure><p>但是，不知道为什么，bitbake始终显示无法找到libelf，即便把libelf.pc加入到了PKG_CONFIG_PATH这个环境变量还是失败了，所以只能采取手动安装的方法，所需要做的事情非常简单<br>1.获取libbpf源码</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/libbpf/libbpf.git</span><br><span class="line"><span class="built_in">cd</span> src</span><br><span class="line">make</span><br></pre></td></tr></table></figure><p>2.用patch命令打上补丁，补丁就在iotg-yocto-ese-main&#x2F;recipes-connectivity&#x2F;libbpf&#x2F;libbpf目录下，只要打上标号为0001的即可</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;OE-Bitbake的介绍&amp;amp;&amp;amp;更新libbpf&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="TSN" scheme="https://c0cytus.github.io/categories/TSN/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TSN实验环境介绍</title>
+    <link href="https://c0cytus.github.io/2020/10/30/Intel-tsn-raspberrypi/TSN%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D/"/>
+    <id>https://c0cytus.github.io/2020/10/30/Intel-tsn-raspberrypi/TSN%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D/</id>
+    <published>2020-10-30T02:05:15.000Z</published>
+    <updated>2020-11-03T03:20:50.069Z</updated>
+    
+    <content type="html"><![CDATA[<p>基于<a href="https://github.com/intel/iotg_tsn_ref_sw">Intel的TSN参考程序</a></p><span id="more"></span><h2 id="依赖项"><a href="#依赖项" class="headerlink" title="依赖项"></a>依赖项</h2><h3 id="特定的具有实时操作系统系统特性的linux-kernel"><a href="#特定的具有实时操作系统系统特性的linux-kernel" class="headerlink" title="特定的具有实时操作系统系统特性的linux kernel"></a><a href="https://github.com/intel/linux-intel-lts/tree/5.4/preempt-rt">特定的具有实时操作系统系统特性的linux kernel</a></h3><pre><code>经过实验，在Ubuntu 20.10桌面版和服务器版上因为驱动程序代码部分报错均失败了，在树莓派官方系统上虽然编译成功，但新的内核无法启动但Ubuntu 20.10服务器版默认安装了PREEMPT补丁，所以可以暂时跳过这一步</code></pre><h3 id="特定的libbpf"><a href="#特定的libbpf" class="headerlink" title="特定的libbpf"></a><a href="https://github.com/intel/iotg-yocto-ese-main/tree/master/recipes-connectivity/libbpf">特定的libbpf</a></h3><h3 id="libelf"><a href="#libelf" class="headerlink" title="libelf"></a>libelf</h3><h2 id="修改Makefile-am"><a href="#修改Makefile-am" class="headerlink" title="修改Makefile.am"></a>修改Makefile.am</h2><p>Makefile里除了tsn，还包括了opcua，我们可以先注释掉这一部分，修改为如下所示：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">bin_PROGRAMS = tsq txrx-tsn </span><br><span class="line">tsq_SOURCES = src/tsq.c</span><br><span class="line">txrx_tsn_SOURCES = src/txrx.c src/txrx-afpkt.c src/txrx-afxdp.c</span><br><span class="line"><span class="comment">#opcua_server_SOURCES=src/opcua-tsn/multicallback_server.c   \</span></span><br><span class="line"><span class="comment">#src/opcua-tsn/json_helper.c\</span></span><br><span class="line"><span class="comment">#src/opcua-tsn/opcua_common.c\</span></span><br><span class="line"><span class="comment">#src/opcua-tsn/opcua_custom.c\</span></span><br><span class="line"><span class="comment">#src/opcua-tsn/opcua_datasource.c\</span></span><br><span class="line"><span class="comment">#src/opcua-tsn/opcua_publish.c\</span></span><br><span class="line"><span class="comment">#src/opcua-tsn/opcua_subscribe.c</span></span><br><span class="line">txrx_tsn_LDADD = $(libbpf_LIBS) $(libelf_LIBS) -lpthread</span><br><span class="line"><span class="comment">#opcua_server_LDADD = $(open62451_LIBS) $(libjson_LIBS) $(libbpf_LIBS) $(libelf_LIBS) -lpthread</span></span><br><span class="line"></span><br><span class="line">AM_CPPFLAGS = -O2 -g -fstack-protector-strong -fPIE -fPIC -D_FORTIFY_SOURCE=2 \</span><br><span class="line">-Wformat -Wformat-security -Wformat-overflow -Wno-parentheses \</span><br><span class="line">-Wno-missing-field-initializers -Wextra -Wall \</span><br><span class="line">$(libbpf_CFLAGS) $(libelf_CFLAGS)</span><br><span class="line">AM_LDFLAGS = -Wl,-z,noexecstack,-z,relro,-z,now -pie</span><br></pre></td></tr></table></figure><h2 id="安装libbpf、libelf"><a href="#安装libbpf、libelf" class="headerlink" title="安装libbpf、libelf"></a>安装libbpf、libelf</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libbpf-dev</span><br><span class="line">sudo apt-get install libelf-dev</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;基于&lt;a href=&quot;https://github.com/intel/iotg_tsn_ref_sw&quot;&gt;Intel的TSN参考程序&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="TSN" scheme="https://c0cytus.github.io/categories/TSN/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>树莓派初始化</title>
+    <link href="https://c0cytus.github.io/2020/10/30/Intel-tsn-raspberrypi/%E6%A0%91%E8%8E%93%E6%B4%BE%C2%B7/"/>
+    <id>https://c0cytus.github.io/2020/10/30/Intel-tsn-raspberrypi/%E6%A0%91%E8%8E%93%E6%B4%BE%C2%B7/</id>
+    <published>2020-10-30T02:00:00.000Z</published>
+    <updated>2020-11-03T01:58:15.505Z</updated>
+    
+    <content type="html"><![CDATA[<p>安装系统并建立SSH连接</p><span id="more"></span><h3 id="树莓派型号"><a href="#树莓派型号" class="headerlink" title="树莓派型号"></a>树莓派型号</h3><p>树莓派4B+ 4G版本</p><h3 id="安装Raspberry-Pi-Imager"><a href="#安装Raspberry-Pi-Imager" class="headerlink" title="安装Raspberry Pi Imager"></a>安装Raspberry Pi Imager</h3><p>为了在SD中写入我们所需的系统，我们需要一个镜像烧写工具，推荐使用官方的工具<a href="https://www.raspberrypi.org/downloads/">Raspberry Pi Imager</a></p><h3 id="安装操作系统"><a href="#安装操作系统" class="headerlink" title="安装操作系统"></a>安装操作系统</h3><p>另外我们还需要下载一个系统，我使用的是<a href="https://ubuntu.com/download/raspberry-pi">Ubuntu Server 20.10</a>，下面的记录也全是基于这一操作系统，因为经过尝试，后面搭建TSN实验环境时，libbpf包仅支持最新的Ubuntu 20.10版本，而64位的Ubuntu Desktop 20.10会报错，而树莓派官方的系统编译内核的过程比较麻烦</p><h3 id="在SD卡中写入操作系统"><a href="#在SD卡中写入操作系统" class="headerlink" title="在SD卡中写入操作系统"></a>在SD卡中写入操作系统</h3><p>把SD卡放入读卡器，把读卡器插入电脑，打开Raspberry Pi Imager，在CHOOSE OS中选择Use Custome，找到之前下载的操作系统，在CHOSSE SD CARD中选择放入的SD卡，点击WRITE就可以了</p><h3 id="设置网络"><a href="#设置网络" class="headerlink" title="设置网络"></a>设置网络</h3><p>把读卡器拔出再插入电脑，可以找到一个boot盘，找到network-config文件，修改为如下所示：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">version: 2</span><br><span class="line">ethernets:</span><br><span class="line">  eth0:</span><br><span class="line">    <span class="comment"># Rename the built-in ethernet device to &quot;eth0&quot;</span></span><br><span class="line">    match:</span><br><span class="line">      driver: bcmgenet smsc95xx lan78xx</span><br><span class="line">    set-name: eth0</span><br><span class="line">    dhcp4: <span class="literal">true</span></span><br><span class="line">    optional: <span class="literal">true</span></span><br><span class="line">wifis:</span><br><span class="line">  wlan0:</span><br><span class="line">    dhcp4: <span class="literal">true</span></span><br><span class="line">    optional: <span class="literal">true</span></span><br><span class="line">    access-points: </span><br><span class="line">      <span class="string">&quot;WIFI名字&quot;</span>: </span><br><span class="line">        password: <span class="string">&quot;WIFI密码&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>WIFI名字最好是英文，中文可能会出错，这样树莓派可以连上WIFI，方便之后使用SSH登陆<br>注意，在第一次启动树莓派时如果等待一段时间之后还是连不上网，可以拔掉电源重启一次</p><h3 id="建立SSH连接"><a href="#建立SSH连接" class="headerlink" title="建立SSH连接"></a>建立SSH连接</h3><p>Ubuntu Server 20.10是默认启用了SSH服务的，我们只需要把电脑和树莓派接入同一局域网，树莓派4B+的mac地址开头都是dc:a6，找到它的IP地址就可以连接了，一个较为简单的方法是：把树莓派和电脑都接入手机的热点，在手机上下载一个终端，输入ip neigh，即可查询到ip 地址。之后在Xshell新建连接即可，初始的用户名和密码都是ubuntu，进去之后会强制设置新密码</p><h3 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="built_in">cp</span> /etc/apt/sources.list /etc/apt/sources.list.bak</span><br><span class="line">sudo vim /etc/apt/sources.list</span><br></pre></td></tr></table></figure><p>注意要选择适用于arm的国内源，我的配置如下:</p><pre><code class="bash">#默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ groovy main restricted universe multiverse# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy main restricted universe multiversedeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ groovy-updates main restricted universe multiverse# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-updates main restricted universe multiversedeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ groovy-backports main restricted universe multiverse# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-backports main restricted universe multiversedeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ groovy-security main restricted universe multiverse# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-security main restricted universe multiverse# 预发布软件源，不建议启用# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse</code></pre>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;安装系统并建立SSH连接&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="TSN" scheme="https://c0cytus.github.io/categories/TSN/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Regular Expression</title>
+    <link href="https://c0cytus.github.io/2020/04/03/Regular-Expression/"/>
+    <id>https://c0cytus.github.io/2020/04/03/Regular-Expression/</id>
+    <published>2020-04-03T07:09:57.000Z</published>
+    <updated>2020-10-30T02:00:38.417Z</updated>
+    
+    <content type="html"><![CDATA[<p>正则表达式基本语法</p><span id="more"></span><h2 id="非打印字符"><a href="#非打印字符" class="headerlink" title="非打印字符"></a>非打印字符</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">\cx        匹配由x指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一</span><br><span class="line">       否则，将 c 视为一个原义的 <span class="string">&#x27;c&#x27;</span> 字符</span><br><span class="line">\f         匹配一个换页符。等价于 \x0c 和 \cL</span><br><span class="line">\n         匹配一个换行符。等价于 \x0a 和 \cJ</span><br><span class="line">\r         匹配一个回车符。等价于 \x0d 和 \cM</span><br><span class="line">\s         匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [\f\n\r\t\v]</span><br><span class="line">       注意 Unicode 正则表达式会匹配全角空格符。</span><br><span class="line">\S         匹配任何非空白字符。等价于 \[^ \f\n\r\t\v]</span><br><span class="line">\t         匹配一个制表符。等价于 \x09 和 \cI</span><br><span class="line">\v         匹配一个垂直制表符。等价于 \x0b 和 \cK</span><br></pre></td></tr></table></figure><h2 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$       匹配输入字符串的结尾位置。如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 <span class="string">&#x27;\n&#x27;</span> 或 <span class="string">&#x27;\r&#x27;</span></span><br><span class="line">()          标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用</span><br><span class="line">*       匹配前面的子表达式零次或多次</span><br><span class="line">+       匹配前面的子表达式一次或多次</span><br><span class="line">.       匹配除换行符 \n 之外的任何单字符 </span><br><span class="line">[       标记一个中括号表达式的开始</span><br><span class="line">?       匹配前面的子表达式零次或一次，或指明一个非贪婪限定符</span><br><span class="line">\       将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符</span><br><span class="line">^       匹配输入字符串的开始位置，除非在方括号表达式中使用</span><br><span class="line">    当该符号在方括号表达式中使用时，表示不接受该方括号表达式中的字符集合</span><br><span class="line">&#123;       标记限定符表达式的开始</span><br><span class="line">|       指明两项之间的一个选择</span><br></pre></td></tr></table></figure><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="定位符"><a href="#定位符" class="headerlink" title="定位符"></a>定位符</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\b   匹配一个单词边界，即字与空格间的位置</span><br><span class="line">\B       非单词边界匹配</span><br></pre></td></tr></table></figure><h3 id="捕获元"><a href="#捕获元" class="headerlink" title="捕获元"></a>捕获元</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//前瞻：</span><br><span class="line">exp1(?=exp2) 查找exp2前面的exp1</span><br><span class="line">//后顾：</span><br><span class="line">(?&lt;=exp2)exp1 查找exp2后面的exp1</span><br><span class="line">//负前瞻：</span><br><span class="line">exp1(?!exp2) 查找后面不是exp2的exp1</span><br><span class="line">//负后顾：</span><br><span class="line">(?&lt;!exp2)exp1 查找前面不是exp2的exp1</span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 数字格式化 1,123,000</span><br><span class="line"><span class="string">&quot;1234567890&quot;</span>.replace(/\B(?=(?:\d&#123;3&#125;)+(?!\d))/g,<span class="string">&quot;,&quot;</span>) </span><br><span class="line">// 结果：1,234,567,890，匹配的是后面是3*n个数字的非单词边界(\B)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;正则表达式基本语法&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://c0cytus.github.io/categories/Tools/"/>
+    
+    
+  </entry>
+  
+</feed>

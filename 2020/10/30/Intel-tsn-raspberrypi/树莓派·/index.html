@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="yanm1ng&#39;s blog">
+  <meta name="keyword" content="hexo-theme, vuejs">
+  
+    <link rel="shortcut icon" href="/css/images/logo.png">
+  
+  <title>
+    
+      树莓派初始化 | Hrh
+    
+  </title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  
+  
+  
+  
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
+  
+
+
+  
+  
+    
+<script src="/js/local-search.js"></script>
+
+
+<meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Hrh" type="application/atom+xml">
+</head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png" />
+</div>
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>Hrh</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">About</a>
+          
+        </li>
+      
+      
+        <li class="menu-item menu-item-search right-list">
+    <a role="button" class="popup-trigger">
+        <i class="fa fa-search fa-fw"></i>
+    </a>
+</li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+    
+      <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+            <span class="search-icon">
+                <i class="fa fa-search"></i>
+            </span>
+            <div class="search-input-container">
+                <input autocomplete="off" autocapitalize="off"
+                    placeholder="Please enter your keyword(s) to search." spellcheck="false"
+                    type="search" class="search-input">
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa fa-times-circle"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>树莓派初始化</h2>
+  <p class="post-date">2020-10-30</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><p>安装系统并建立SSH连接</p>
+<span id="more"></span>
+<h3 id="树莓派型号"><a href="#树莓派型号" class="headerlink" title="树莓派型号"></a>树莓派型号</h3><p>树莓派4B+ 4G版本</p>
+<h3 id="安装Raspberry-Pi-Imager"><a href="#安装Raspberry-Pi-Imager" class="headerlink" title="安装Raspberry Pi Imager"></a>安装Raspberry Pi Imager</h3><p>为了在SD中写入我们所需的系统，我们需要一个镜像烧写工具，推荐使用官方的工具<a target="_blank" rel="noopener" href="https://www.raspberrypi.org/downloads/">Raspberry Pi Imager</a></p>
+<h3 id="安装操作系统"><a href="#安装操作系统" class="headerlink" title="安装操作系统"></a>安装操作系统</h3><p>另外我们还需要下载一个系统，我使用的是<a target="_blank" rel="noopener" href="https://ubuntu.com/download/raspberry-pi">Ubuntu Server 20.10</a>，下面的记录也全是基于这一操作系统，因为经过尝试，后面搭建TSN实验环境时，libbpf包仅支持最新的Ubuntu 20.10版本，而64位的Ubuntu Desktop 20.10会报错，而树莓派官方的系统编译内核的过程比较麻烦</p>
+<h3 id="在SD卡中写入操作系统"><a href="#在SD卡中写入操作系统" class="headerlink" title="在SD卡中写入操作系统"></a>在SD卡中写入操作系统</h3><p>把SD卡放入读卡器，把读卡器插入电脑，打开Raspberry Pi Imager，在CHOOSE OS中选择Use Custome，找到之前下载的操作系统，在CHOSSE SD CARD中选择放入的SD卡，点击WRITE就可以了</p>
+<h3 id="设置网络"><a href="#设置网络" class="headerlink" title="设置网络"></a>设置网络</h3><p>把读卡器拔出再插入电脑，可以找到一个boot盘，找到network-config文件，修改为如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">version: 2</span><br><span class="line">ethernets:</span><br><span class="line">  eth0:</span><br><span class="line">    <span class="comment"># Rename the built-in ethernet device to &quot;eth0&quot;</span></span><br><span class="line">    match:</span><br><span class="line">      driver: bcmgenet smsc95xx lan78xx</span><br><span class="line">    set-name: eth0</span><br><span class="line">    dhcp4: <span class="literal">true</span></span><br><span class="line">    optional: <span class="literal">true</span></span><br><span class="line">wifis:</span><br><span class="line">  wlan0:</span><br><span class="line">    dhcp4: <span class="literal">true</span></span><br><span class="line">    optional: <span class="literal">true</span></span><br><span class="line">    access-points: </span><br><span class="line">      <span class="string">&quot;WIFI名字&quot;</span>: </span><br><span class="line">        password: <span class="string">&quot;WIFI密码&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>WIFI名字最好是英文，中文可能会出错，这样树莓派可以连上WIFI，方便之后使用SSH登陆<br>注意，在第一次启动树莓派时如果等待一段时间之后还是连不上网，可以拔掉电源重启一次</p>
+<h3 id="建立SSH连接"><a href="#建立SSH连接" class="headerlink" title="建立SSH连接"></a>建立SSH连接</h3><p>Ubuntu Server 20.10是默认启用了SSH服务的，我们只需要把电脑和树莓派接入同一局域网，树莓派4B+的mac地址开头都是dc:a6，找到它的IP地址就可以连接了，一个较为简单的方法是：把树莓派和电脑都接入手机的热点，在手机上下载一个终端，输入ip neigh，即可查询到ip 地址。之后在Xshell新建连接即可，初始的用户名和密码都是ubuntu，进去之后会强制设置新密码</p>
+<h3 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="built_in">cp</span> /etc/apt/sources.list /etc/apt/sources.list.bak</span><br><span class="line">sudo vim /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
+<p>注意要选择适用于arm的国内源，我的配置如下:</p>
+<pre><code class="bash">#默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ groovy main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ groovy-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ groovy-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ groovy-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-security main restricted universe multiverse
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse
+</code></pre>
+</section>
+    <!-- Tags START -->
+    
+    <!-- Tags END -->
+    <!-- NAV START -->
+    
+  <div class="nav-container">
+    <!-- reverse left and right to put prev and next in a more logic postition -->
+    
+      <a class="nav-left" href="/2020/04/03/Regular-Expression/">
+        <span class="nav-arrow">← </span>
+        
+          Regular Expression
+        
+      </a>
+    
+    
+      <a class="nav-right" href="/2020/10/30/Intel-tsn-raspberrypi/TSN%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83%E4%BB%8B%E7%BB%8D/">
+        
+          TSN实验环境介绍
+        
+        <span class="nav-arrow"> →</span>
+      </a>
+    
+  </div>
+
+    <!-- NAV END -->
+    <!-- 打赏 START -->
+    
+    <!-- 打赏 END -->
+    <!-- 二维码 START -->
+    
+    <!-- 二维码 END -->
+    
+      <!-- Utterances START -->
+      <div id="utterances"></div>
+      <script src="https://utteranc.es/client.js"
+        repo=""
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>    
+      <!-- Utterances END -->
+    
+  </article>
+  <!-- Article END -->
+  <!-- Catalog START -->
+  
+    <aside class="catalog-container">
+  <div class="toc-main">
+    <strong class="toc-title">Catalog</strong>
+    
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%A0%91%E8%8E%93%E6%B4%BE%E5%9E%8B%E5%8F%B7"><span class="toc-nav-text">树莓派型号</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85Raspberry-Pi-Imager"><span class="toc-nav-text">安装Raspberry Pi Imager</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-nav-text">安装操作系统</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E5%9C%A8SD%E5%8D%A1%E4%B8%AD%E5%86%99%E5%85%A5%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-nav-text">在SD卡中写入操作系统</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%BB%9C"><span class="toc-nav-text">设置网络</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E5%BB%BA%E7%AB%8BSSH%E8%BF%9E%E6%8E%A5"><span class="toc-nav-text">建立SSH连接</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%8D%A2%E6%BA%90"><span class="toc-nav-text">换源</span></a></li></ol>
+    
+  </div>
+</aside>
+  
+  <!-- Catalog END -->
+</main>
+
+<script>
+  (function () {
+    var url = 'https://c0cytus.github.io/2020/10/30/Intel-tsn-raspberrypi/树莓派·/';
+    var banner = ''
+    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+    // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', '/css/images/error_icon.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== '/css/images/error_icon.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+  })();
+</script>
+
+
+
+
+
+
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2022 |  Thank you for your visit</a>
+    <br>
+    
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      hljs.configure({useBR: true});
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+
+<script src="/js/script.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="yanm1ng&#39;s blog">
+  <meta name="keyword" content="hexo-theme, vuejs">
+  
+    <link rel="shortcut icon" href="/css/images/logo.png">
+  
+  <title>
+    
+      TSN实验环境介绍 | Hrh
+    
+  </title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  
+  
+  
+  
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
+  
+
+
+  
+  
+    
+<script src="/js/local-search.js"></script>
+
+
+<meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Hrh" type="application/atom+xml">
+</head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png" />
+</div>
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>Hrh</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">About</a>
+          
+        </li>
+      
+      
+        <li class="menu-item menu-item-search right-list">
+    <a role="button" class="popup-trigger">
+        <i class="fa fa-search fa-fw"></i>
+    </a>
+</li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+    
+      <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+            <span class="search-icon">
+                <i class="fa fa-search"></i>
+            </span>
+            <div class="search-input-container">
+                <input autocomplete="off" autocapitalize="off"
+                    placeholder="Please enter your keyword(s) to search." spellcheck="false"
+                    type="search" class="search-input">
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa fa-times-circle"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>TSN实验环境介绍</h2>
+  <p class="post-date">2020-10-30</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><p>基于<a target="_blank" rel="noopener" href="https://github.com/intel/iotg_tsn_ref_sw">Intel的TSN参考程序</a></p>
+<span id="more"></span>
+<h2 id="依赖项"><a href="#依赖项" class="headerlink" title="依赖项"></a>依赖项</h2><h3 id="特定的具有实时操作系统系统特性的linux-kernel"><a href="#特定的具有实时操作系统系统特性的linux-kernel" class="headerlink" title="特定的具有实时操作系统系统特性的linux kernel"></a><a target="_blank" rel="noopener" href="https://github.com/intel/linux-intel-lts/tree/5.4/preempt-rt">特定的具有实时操作系统系统特性的linux kernel</a></h3><pre><code>经过实验，在Ubuntu 20.10桌面版和服务器版上因为驱动程序代码部分报错均失败了，在树莓派官方系统上虽然编译成功，但新的内核无法启动
+但Ubuntu 20.10服务器版默认安装了PREEMPT补丁，所以可以暂时跳过这一步
+</code></pre>
+<h3 id="特定的libbpf"><a href="#特定的libbpf" class="headerlink" title="特定的libbpf"></a><a target="_blank" rel="noopener" href="https://github.com/intel/iotg-yocto-ese-main/tree/master/recipes-connectivity/libbpf">特定的libbpf</a></h3><h3 id="libelf"><a href="#libelf" class="headerlink" title="libelf"></a>libelf</h3><h2 id="修改Makefile-am"><a href="#修改Makefile-am" class="headerlink" title="修改Makefile.am"></a>修改Makefile.am</h2><p>Makefile里除了tsn，还包括了opcua，我们可以先注释掉这一部分，修改为如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">bin_PROGRAMS = tsq txrx-tsn </span><br><span class="line">tsq_SOURCES = src/tsq.c</span><br><span class="line">txrx_tsn_SOURCES = src/txrx.c src/txrx-afpkt.c src/txrx-afxdp.c</span><br><span class="line"><span class="comment">#opcua_server_SOURCES=src/opcua-tsn/multicallback_server.c   \</span></span><br><span class="line"><span class="comment">#			src/opcua-tsn/json_helper.c	\</span></span><br><span class="line"><span class="comment">#			src/opcua-tsn/opcua_common.c	\</span></span><br><span class="line"><span class="comment">#			src/opcua-tsn/opcua_custom.c	\</span></span><br><span class="line"><span class="comment">#			src/opcua-tsn/opcua_datasource.c\</span></span><br><span class="line"><span class="comment">#			src/opcua-tsn/opcua_publish.c	\</span></span><br><span class="line"><span class="comment">#			src/opcua-tsn/opcua_subscribe.c</span></span><br><span class="line">txrx_tsn_LDADD = $(libbpf_LIBS) $(libelf_LIBS) -lpthread</span><br><span class="line"><span class="comment">#opcua_server_LDADD = $(open62451_LIBS) $(libjson_LIBS) $(libbpf_LIBS) $(libelf_LIBS) -lpthread</span></span><br><span class="line"></span><br><span class="line">AM_CPPFLAGS = -O2 -g -fstack-protector-strong -fPIE -fPIC -D_FORTIFY_SOURCE=2 \</span><br><span class="line">		-Wformat -Wformat-security -Wformat-overflow -Wno-parentheses \</span><br><span class="line">		-Wno-missing-field-initializers -Wextra -Wall \</span><br><span class="line">		$(libbpf_CFLAGS) $(libelf_CFLAGS)</span><br><span class="line">AM_LDFLAGS = -Wl,-z,noexecstack,-z,relro,-z,now -pie</span><br></pre></td></tr></table></figure>
+<h2 id="安装libbpf、libelf"><a href="#安装libbpf、libelf" class="headerlink" title="安装libbpf、libelf"></a>安装libbpf、libelf</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libbpf-dev</span><br><span class="line">sudo apt-get install libelf-dev</span><br></pre></td></tr></table></figure></section>
+    <!-- Tags START -->
+    
+    <!-- Tags END -->
+    <!-- NAV START -->
+    
+  <div class="nav-container">
+    <!-- reverse left and right to put prev and next in a more logic postition -->
+    
+      <a class="nav-left" href="/2020/10/30/Intel-tsn-raspberrypi/%E6%A0%91%E8%8E%93%E6%B4%BE%C2%B7/">
+        <span class="nav-arrow">← </span>
+        
+          树莓派初始化
+        
+      </a>
+    
+    
+      <a class="nav-right" href="/2020/11/03/Intel-tsn-raspberrypi/OE-Bitbake%E7%8E%AF%E5%A2%83/">
+        
+          OE-Bitbake环境
+        
+        <span class="nav-arrow"> →</span>
+      </a>
+    
+  </div>
+
+    <!-- NAV END -->
+    <!-- 打赏 START -->
+    
+    <!-- 打赏 END -->
+    <!-- 二维码 START -->
+    
+    <!-- 二维码 END -->
+    
+      <!-- Utterances START -->
+      <div id="utterances"></div>
+      <script src="https://utteranc.es/client.js"
+        repo=""
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>    
+      <!-- Utterances END -->
+    
+  </article>
+  <!-- Article END -->
+  <!-- Catalog START -->
+  
+    <aside class="catalog-container">
+  <div class="toc-main">
+    <strong class="toc-title">Catalog</strong>
+    
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%BE%9D%E8%B5%96%E9%A1%B9"><span class="toc-nav-text">依赖项</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%89%B9%E5%AE%9A%E7%9A%84%E5%85%B7%E6%9C%89%E5%AE%9E%E6%97%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%B3%BB%E7%BB%9F%E7%89%B9%E6%80%A7%E7%9A%84linux-kernel"><span class="toc-nav-text">特定的具有实时操作系统系统特性的linux kernel</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%89%B9%E5%AE%9A%E7%9A%84libbpf"><span class="toc-nav-text">特定的libbpf</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#libelf"><span class="toc-nav-text">libelf</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E4%BF%AE%E6%94%B9Makefile-am"><span class="toc-nav-text">修改Makefile.am</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AE%89%E8%A3%85libbpf%E3%80%81libelf"><span class="toc-nav-text">安装libbpf、libelf</span></a></li></ol>
+    
+  </div>
+</aside>
+  
+  <!-- Catalog END -->
+</main>
+
+<script>
+  (function () {
+    var url = 'https://c0cytus.github.io/2020/10/30/Intel-tsn-raspberrypi/TSN实验环境介绍/';
+    var banner = ''
+    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+    // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', '/css/images/error_icon.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== '/css/images/error_icon.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+  })();
+</script>
+
+
+
+
+
+
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2022 |  Thank you for your visit</a>
+    <br>
+    
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      hljs.configure({useBR: true});
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+
+<script src="/js/script.js"></script>
+
+
+  </body>
+</html>
